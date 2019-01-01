@@ -1,0 +1,37 @@
+Thanks for purchase UMenu Gallery Asset.
+
+Requirements:
+
+- Unity 4.6+
+
+Get Started-------------------------------------------------------------
+
+- Import UMenu Gallery Package into your project.
+- Open the Menu scene in: UMenu Gallery -> Content -> Scene -> UMenuGallery
+- in your scene / scenes put the script "UMGOptionsScene.cs" in a static gameobject.(to apply the settings menu)
+- Change the example text of Menu for your own text.
+- Ready.
+
+
+Configure a new level / scene in Menu-----------------------------------
+
+- In UMenuPro scene go to UMenu Pro Manager GameObject.
+- In UMP_Manager script go to the list "Levels".
+- Add a new space in the list.
+- set the variables as follows:
+
+     - LevelName = Correct level name of scene (same of build setting)
+     - Preview = sprite image representing the level of the scene.
+	 - LevelNeeded = The level of plauer for he can play in this scenes.
+
+	NOTE: you need have your own level system in your game implement for this last work.
+
+ Add More Or Change images in gallery-------------------------------------
+ - Go to UMGManager -> bl_BackGround -> Images (List)
+ - Select or Add a new image into the list.
+ - Ready.
+
+For question or problems, contactme in:
+
+Mail: brinerjhonson.lc@gmail.com	
+Forum: http://lovattostudio.com/Forum/index.php
