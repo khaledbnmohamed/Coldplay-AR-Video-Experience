@@ -69,17 +69,17 @@ public class UMG_SceneOptions : MonoBehaviour {
                 break;
         }
         //
-        switch (CurrentBW)
-        {
-            case 0:
-                QualitySettings.blendWeights = BlendWeights.OneBone;
-                break;
-            case 1:
-                QualitySettings.blendWeights = BlendWeights.TwoBones;
-                break;
-            case 2:
-                QualitySettings.blendWeights = BlendWeights.FourBones;
-                break;
-        }
+        //switch (CurrentBW)
+        //{
+        //    case 0:
+        //        QualitySettings.blendWeights = BlendWeights.OneBone;
+        //        break;
+        //    case 1:
+        //        QualitySettings.blendWeights = BlendWeights.TwoBones;
+        //        break;
+        //    case 2:
+        //        QualitySettings.blendWeights = BlendWeights.FourBones;
+        //        break;
+        //}
     }
 }
