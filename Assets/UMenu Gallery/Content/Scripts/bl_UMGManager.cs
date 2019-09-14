@@ -108,6 +108,7 @@ public class bl_UMGManager : MonoBehaviour {
     {
         if (id <= Windows.Count && Windows[id] != null)
         {
+
             if (Windows[id] == m_CurrentWindow)
                 return;
 
@@ -115,6 +116,8 @@ public class bl_UMGManager : MonoBehaviour {
             //Hide current window
             if (m_CurrentWindow != null)
             {
+                Debug.Log("I'm changing window" + m_CurrentWindow);
+
                 m_CurrentWindow.GetWindow().Hide();
             }
             m_CurrentWindow = Windows[id];

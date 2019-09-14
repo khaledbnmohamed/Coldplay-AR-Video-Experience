@@ -1072,10 +1072,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ab98812b0e32b42bba8f157e99eedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
-  StartAnim: Start
+  Anim: {fileID: 180875047}
+  StartAnim: Start_Left
   useReverse: 1
-  HideAnim: Hide
+  HideAnim: Hide_Right
 --- !u!111 &180875047
 Animation:
   m_ObjectHideFlags: 0
@@ -1092,7 +1092,7 @@ Animation:
   - {fileID: 7400000, guid: 35e2e6e581460924bade6c00802997c5, type: 2}
   - {fileID: 7400000, guid: 1b2f3dff373058a489af4183b851e642, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &180875048
@@ -1142,7 +1142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackGround_1: {fileID: 482435399}
   BackGround_2: {fileID: 210885842}
-  Images: []
+  Images:
+  - {fileID: 21300000, guid: d983086a2bff5354998e69c3555be92d, type: 3}
+  - {fileID: 21300000, guid: bb08cb54d70b9d44d85a02a29729a6f4, type: 3}
+  - {fileID: 21300000, guid: 55b4dcfd7d7b9c44a8ae1154efde2f06, type: 3}
   LoopAnim: {fileID: 0}
   Firts: 1
   m_Delay: 2
@@ -2678,8 +2681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ab98812b0e32b42bba8f157e99eedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
-  StartAnim: Start
+  Anim: {fileID: 588871636}
+  StartAnim: Start_Left
   useReverse: 1
   HideAnim: Hide_Right
 --- !u!111 &588871636
@@ -2696,7 +2699,7 @@ Animation:
   - {fileID: 7400000, guid: 24f3a54499ec1234bb77ead51dbc6a06, type: 2}
   - {fileID: 7400000, guid: 2a415a6dfe4478648b090df013060677, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &588871637

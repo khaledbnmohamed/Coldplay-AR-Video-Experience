@@ -20,6 +20,8 @@ public class SceneSwitcher : MonoBehaviour
 
 
             StartCoroutine(ChangeScene());
+
+            Debug.Log("I clicked back");
         
     }
  
@@ -46,7 +48,7 @@ public class SceneSwitcher : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Loaded = true;
-        SceneManager.UnloadSceneAsync(1);
+        SceneManager.UnloadSceneAsync(sceneToUnload);
 
 
     }
