@@ -1038,7 +1038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &180875045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1140,15 +1140,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f94849e998a364da9fb7bf1afc349f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackGround_1: {fileID: 0}
-  BackGround_2: {fileID: 0}
+  BackGround_1: {fileID: 482435399}
+  BackGround_2: {fileID: 210885842}
   Images: []
   LoopAnim: {fileID: 0}
   Firts: 1
   m_Delay: 2
   PlayerGallery: {fileID: 0}
-  PlaySprite: {fileID: 0}
-  PauseSprite: {fileID: 0}
+  PlaySprite: {fileID: 21300002, guid: 5adea5ff85a2785448d2ec6f0d67ae3f, type: 3}
+  PauseSprite: {fileID: 21300000, guid: 5adea5ff85a2785448d2ec6f0d67ae3f, type: 3}
 --- !u!4 &200023260
 Transform:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenename: SampleScene
-  Windows: []
+  Windows:
+  - {fileID: 180875044}
+  - {fileID: 588871633}
   Levels: []
   LevelPrefab: {fileID: 0}
   LevelPanel: {fileID: 0}
@@ -1197,10 +1199,10 @@ MonoBehaviour:
   QualityText: {fileID: 0}
   AntiStropicText: {fileID: 0}
   AntiAliasingText: {fileID: 0}
-  vSyncText: {fileID: 0}
+  vSyncText: {fileID: 2096105112}
   blendWeightsText: {fileID: 0}
   ResolutionText: {fileID: 0}
-  VolumenSlider: {fileID: 0}
+  VolumenSlider: {fileID: 656416143}
 --- !u!114 &200023263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2679,7 +2681,7 @@ MonoBehaviour:
   Anim: {fileID: 0}
   StartAnim: Start
   useReverse: 1
-  HideAnim: Hide
+  HideAnim: Hide_Right
 --- !u!111 &588871636
 Animation:
   m_ObjectHideFlags: 0
@@ -3645,11 +3647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d55b4a2496c24045b7c5b4716102218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vSyncText: {fileID: 0}
-  myVideo1: {fileID: 0}
-  myVideo2: {fileID: 0}
-  sphere1: {fileID: 0}
-  sphere2: {fileID: 0}
+  vSyncText: {fileID: 2096105112}
+  myVideo1: {fileID: 1453982691928429520, guid: efd70f02eeb397843b428e75fed270b4,
+    type: 3}
+  myVideo2: {fileID: 1996376379365211449, guid: c5fccea3e8b22834fa1bb05a20edb8f4,
+    type: 3}
+  sphere1: {fileID: 1453982691928429527, guid: efd70f02eeb397843b428e75fed270b4, type: 3}
+  sphere2: {fileID: 1996376379365211447, guid: c5fccea3e8b22834fa1bb05a20edb8f4, type: 3}
 --- !u!4 &921287842
 Transform:
   m_ObjectHideFlags: 0
@@ -7868,7 +7872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VSync
+  m_Text: Chooes Video
 --- !u!114 &2096105113
 MonoBehaviour:
   m_ObjectHideFlags: 0
