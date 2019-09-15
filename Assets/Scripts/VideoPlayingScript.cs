@@ -10,7 +10,7 @@ public class VideoPlayingScript : MonoBehaviour {
 
     public Text vSyncText = null;
     private int CurrentVSC = 0;
-    private string[] VSCOptions = new string[] { "A Sky Full of Stars", "All I can think about is you","Something Like this","Hymn for Weekend" };
+    private string[] VSCOptions = new string[] { "All I can think about is you", "A Sky Full of Stars", "Hymn for Weekend", "Something Like this" };
 
 
     public VideoPlayer myVideo1;
@@ -45,29 +45,30 @@ public class VideoPlayingScript : MonoBehaviour {
 
     public void VideoSwitcher(bool b)
     {
-        CurrentVSC = (b) ? (CurrentVSC + 1) % 4 : (CurrentVSC != 0) ? (CurrentVSC - 1) % 4 : 1;
-        vSyncText.text = VSCOptions[CurrentVSC];
-        switch (CurrentVSC)
+        if (b)
         {
-            case 0:
-                Debug.Log("currentVSC" + CurrentVSC);
-                x = 0;
-                break;
-            case 1:
-                Debug.Log("currentVSC" + CurrentVSC);
-                x = 1;
-                break;
-            case 2:
-                Debug.Log("currentVSC" + CurrentVSC);
-                x = 2;
-                break;
-            case 3:
-                Debug.Log("currentVSC" + CurrentVSC);
-                x = 3;
-                break;
-
-
+            CurrentVSC = (CurrentVSC + 1) % 4;
         }
+        else {
+
+            if(CurrentVSC != 0)
+              {
+                CurrentVSC = (CurrentVSC - 1) % 4;
+
+            }
+            else
+            {
+                CurrentVSC = 3;
+            }
+        }
+
+        
+
+        vSyncText.text = VSCOptions[CurrentVSC];
+        Debug.Log("currentVSC" + CurrentVSC);
+        x = CurrentVSC;
+
+
     }
     public void Apply()
     {
@@ -105,17 +106,26 @@ public class VideoPlayingScript : MonoBehaviour {
 
     private void chooseVideo()
     {
-        if (y == 1)
-        {
-            chosenVideo = myVideo1;
-            chosenSphere = sphere1;
-
-        }
-        else 
+        switch (y)
         {
 
-            chosenVideo = myVideo2;
-            chosenSphere = sphere2;
+            case 0:
+                chosenVideo = myVideo1;
+                chosenSphere = sphere1;
+                break;
+            case 1:
+                chosenVideo = myVideo2;
+                chosenSphere = sphere2;
+                break;
+            case 2:
+                chosenVideo = myVideo3;
+                chosenSphere = sphere3;
+                break;
+            case 3:
+                chosenVideo = myVideo4;
+                chosenSphere = sphere4;
+                break;
+
         }
     }
 }
