@@ -127,29 +127,29 @@ public class bl_UMGOptions: MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="b"></param>
-    public void blendWeights(bool b)
-    {
-        CurrentBW = (b) ? (CurrentBW + 1) % 3 : (CurrentBW != 0) ? (CurrentBW - 1) % 3 : 2;
-        switch (CurrentBW)
-        {
-            case 0:
-                QualitySettings.blendWeights = BlendWeights.OneBone;
-                blendWeightsText.text = BlendWeights.OneBone.ToString();
-                break;
-            case 1:
-                QualitySettings.blendWeights = BlendWeights.TwoBones;
-                blendWeightsText.text = BlendWeights.TwoBones.ToString();
-                break;
-            case 2:
-                QualitySettings.blendWeights = BlendWeights.FourBones;
-                blendWeightsText.text = BlendWeights.FourBones.ToString();
-                break;
-        }
-    }
+    ///// <summary>
+    ///// 
+    ///// </summary>
+    ///// <param name="b"></param>
+    //public void blendWeights(bool b)
+    //{
+    //    CurrentBW = (b) ? (CurrentBW + 1) % 3 : (CurrentBW != 0) ? (CurrentBW - 1) % 3 : 2;
+    //    switch (CurrentBW)
+    //    {
+    //        case 0:
+    //            QualitySettings.blendWeights = BlendWeights.OneBone;
+    //            blendWeightsText.text = BlendWeights.OneBone.ToString();
+    //            break;
+    //        case 1:
+    //            QualitySettings.blendWeights = BlendWeights.TwoBones;
+    //            blendWeightsText.text = BlendWeights.TwoBones.ToString();
+    //            break;
+    //        case 2:
+    //            QualitySettings.blendWeights = BlendWeights.FourBones;
+    //            blendWeightsText.text = BlendWeights.FourBones.ToString();
+    //            break;
+    //    }
+    //}
 
     /// <summary>
     /// Change resolution of screen
@@ -235,21 +235,21 @@ public class bl_UMGOptions: MonoBehaviour {
                 break;
         }
         //
-        switch (CurrentBW)
-        {
-            case 0:
-                QualitySettings.blendWeights = BlendWeights.OneBone;
-                blendWeightsText.text = BlendWeights.OneBone.ToString();
-                break;
-            case 1:
-                QualitySettings.blendWeights = BlendWeights.TwoBones;
-                blendWeightsText.text = BlendWeights.TwoBones.ToString();
-                break;
-            case 2:
-                QualitySettings.blendWeights = BlendWeights.FourBones;
-                blendWeightsText.text = BlendWeights.FourBones.ToString();
-                break;
-        }
+        //switch (CurrentBW)
+        //{
+        //    case 0:
+        //        QualitySettings.blendWeights = BlendWeights.OneBone;
+        //        blendWeightsText.text = BlendWeights.OneBone.ToString();
+        //        break;
+        //    case 1:
+        //        QualitySettings.blendWeights = BlendWeights.TwoBones;
+        //        blendWeightsText.text = BlendWeights.TwoBones.ToString();
+        //        break;
+        //    case 2:
+        //        QualitySettings.blendWeights = BlendWeights.FourBones;
+        //        blendWeightsText.text = BlendWeights.FourBones.ToString();
+        //        break;
+        //}
         //
         ResolutionText.text = Screen.resolutions[CurrentRS].width + " X " + Screen.resolutions[CurrentRS].height;
     }

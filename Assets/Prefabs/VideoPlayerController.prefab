@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &924993283881625365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924993283881625360}
+  - component: {fileID: 924993283881625367}
+  - component: {fileID: 924993283881625366}
+  m_Layer: 0
+  m_Name: VideoPlayerController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924993283881625360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924993283881625365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 690, y: 55.15515, z: 1280.4991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924993283881625367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924993283881625365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d55b4a2496c24045b7c5b4716102218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vSyncText: {fileID: 0}
+  myVideo1: {fileID: 1453982691928429520, guid: efd70f02eeb397843b428e75fed270b4,
+    type: 3}
+  myVideo2: {fileID: 1996376379365211449, guid: c5fccea3e8b22834fa1bb05a20edb8f4,
+    type: 3}
+  myVideo3: {fileID: 8859136252113317139, guid: 13df27da4181db34d95426a862923566,
+    type: 3}
+  myVideo4: {fileID: 846669966704589782, guid: 406f5e8f9731a9c4bb5e9496cda026ca, type: 3}
+  sphere1: {fileID: 1453982691928429527, guid: efd70f02eeb397843b428e75fed270b4, type: 3}
+  sphere2: {fileID: 1996376379365211447, guid: c5fccea3e8b22834fa1bb05a20edb8f4, type: 3}
+  sphere3: {fileID: 8859136252113317141, guid: 13df27da4181db34d95426a862923566, type: 3}
+  sphere4: {fileID: 846669966704589780, guid: 406f5e8f9731a9c4bb5e9496cda026ca, type: 3}
+--- !u!114 &924993283881625366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924993283881625365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0264491e0dc4b9d4ca2e767cba388084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

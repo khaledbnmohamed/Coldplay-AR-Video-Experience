@@ -28,6 +28,7 @@ public class bl_UMGWindow : MonoBehaviour {
     {
         if (Anim != null)
         {
+            Debug.Log("Anim is not null");
             if (!useReverse)
             {
                 Anim.Play(HideAnim);
