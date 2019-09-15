@@ -3655,8 +3655,12 @@ MonoBehaviour:
     type: 3}
   myVideo2: {fileID: 1996376379365211449, guid: c5fccea3e8b22834fa1bb05a20edb8f4,
     type: 3}
+  myVideo3: {fileID: 0}
+  myVideo4: {fileID: 0}
   sphere1: {fileID: 1453982691928429527, guid: efd70f02eeb397843b428e75fed270b4, type: 3}
   sphere2: {fileID: 1996376379365211447, guid: c5fccea3e8b22834fa1bb05a20edb8f4, type: 3}
+  sphere3: {fileID: 0}
+  sphere4: {fileID: 0}
 --- !u!4 &921287842
 Transform:
   m_ObjectHideFlags: 0

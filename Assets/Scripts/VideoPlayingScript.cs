@@ -10,17 +10,23 @@ public class VideoPlayingScript : MonoBehaviour {
 
     public Text vSyncText = null;
     private int CurrentVSC = 0;
-    private string[] VSCOptions = new string[] { "A Sky Full of Stars", "All I can think about is you" };
+    private string[] VSCOptions = new string[] { "A Sky Full of Stars", "All I can think about is you","Something Like this","Hymn for Weekend" };
 
 
     public VideoPlayer myVideo1;
     public VideoPlayer myVideo2;
+    public VideoPlayer myVideo3;
+    public VideoPlayer myVideo4;
+
     VideoPlayer chosenVideo;
     GameObject chosenSphere;
     int x;
     static int y;
     public GameObject sphere1;
     public GameObject sphere2;
+    public GameObject sphere3;
+    public GameObject sphere4;
+
     bool isPlaying;
     // Use this for initialization
     void Start () {
@@ -39,7 +45,7 @@ public class VideoPlayingScript : MonoBehaviour {
 
     public void VideoSwitcher(bool b)
     {
-        CurrentVSC = (b) ? (CurrentVSC + 1) % 2 : (CurrentVSC != 0) ? (CurrentVSC - 1) % 2 : 1;
+        CurrentVSC = (b) ? (CurrentVSC + 1) % 4 : (CurrentVSC != 0) ? (CurrentVSC - 1) % 4 : 1;
         vSyncText.text = VSCOptions[CurrentVSC];
         switch (CurrentVSC)
         {
@@ -51,6 +57,15 @@ public class VideoPlayingScript : MonoBehaviour {
                 Debug.Log("currentVSC" + CurrentVSC);
                 x = 1;
                 break;
+            case 2:
+                Debug.Log("currentVSC" + CurrentVSC);
+                x = 2;
+                break;
+            case 3:
+                Debug.Log("currentVSC" + CurrentVSC);
+                x = 3;
+                break;
+
 
         }
     }
